@@ -16,7 +16,7 @@ https://www.anaconda.com/distribution/
 
 3) Load Anaconda Navigator and click on Jupyter Notebook
 
-4) Use the Jupyter navigator (It should have loaded into your browser... like Chrome) and navigate until you find your jupyter notebook (for this example it should be called Python_Training.ipynb)
+4) Use the Jupyter navigator (It should have loaded into your browser... like Chrome) and navigate until you are in the directory you wish to use. Then click new and choose Python 3. Voila you created your first notebook.
 
 
 ### Installing a Package.
