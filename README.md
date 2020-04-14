@@ -36,7 +36,7 @@ pip3 install name_of_package # ONLY if you have Python 3 and Python 2
 
 ```
 
-For Mac OS / linux :
+For Mac OS / Linux:
 
 1) Go to your terminal.
 
@@ -60,10 +60,10 @@ Some basic types of data you'll work with (as you can imagine there are plenty m
 ```python
 1234 # This is an Integer! Any Positive or Negative number.
 
-1.34565667 # This is a FLoat! Any decimal number (as well as scientific notations)
+1.34565667 # This is a Float! Any decimal number (as well as scientific notations)
 ```
 
-### Non Numeric:
+### Non-Numeric:
 
 
 ```python
@@ -114,7 +114,7 @@ else:
 ```
 
 ### While loops:
-#### CAREFUL, be sure your closing condition is actually met! Otherwise it will be an infinite loooooop
+#### CAREFUL, be sure your closing condition is met! Otherwise it will be an infinite loooooop
 
 
 ```python
@@ -199,7 +199,7 @@ for i in range(len(a)):
 
 ```python
 a="pepe"
-for (i,j) in enumerate(a): ## this version is preferrable
+for (i,j) in enumerate(a): ## this version is preferable
     print("The character at position " + str(i) + " is " + j)
 ```
 
@@ -251,7 +251,7 @@ fruit.insert(3,'Cherry') ## inserts into position 3 (aka 4)
 
 fruit.append(['Apple','lemon']) ### It will append this list inside the list so that ... 'Banana', ['Kiwi', 'Apple']]
 
-fruit.extend(['Apple','lemon']) ### it will extend the list to include this list (basically an append for mutiple items)
+fruit.extend(['Apple','lemon']) ### it will extend the list to include this list (basically an append for multiple items)
 
 fruit.remove('Apple') ### removes the first instance of 'Apple'
 
@@ -263,7 +263,7 @@ len(fruit) # number of elements in list
 
 'Apple' in fruit  # True, but one thing, if you had apple in your nested list, it will give out FALSE
 
-fruit.count('Apple') # 1. but like the line above, it doesnt count nested list inside list
+fruit.count('Apple') # 1. but like the line above, it doesn’t count nested list inside list
 
 fruit.index('Apple',1,7) # returns position of index of the first item whose value is equal to Apple. You can add 2 parameters the index number to start and the index number to finish your search
 ```
@@ -297,7 +297,7 @@ list(reversed(lista)) ### reversed returns an iterator, you need to explicitly c
 ```
 
 ### Slight detour to yield
-You use yield to iterate over long sequences and you dont want to charge everything into Memory (or need more control)
+You use yield to iterate over long sequences and you don’t want to charge everything into Memory (or need more control)
 
 
 ```python
@@ -312,11 +312,11 @@ next(a) # yields  0
 
 #### Try taking the # from the statements and run the cell again!
 #### Using Yield allow you to create a function that can iterate over humongous amounts of data (even infinite) since it only loads a vale at a time.
-#### If you try to do this with return and a very big number... you will run out of memmory.
+#### If you try to do this with return and a very big number... you will run out of memory.
 ```
 
 ## Tuples:
-An inmutable python list. Thus you cannot use use methods that changes in-place the list.
+An immutable python list. Thus, you cannot use methods that changes in-place the list.
 
 
 ```python
@@ -324,7 +324,7 @@ tupla = ('a','b','c')
 
 new_tupla = tupla + tupla ### you can however concatenate tuples to create a new one out of existing ones.
 
-new_tupla # But again this is a new object the original one  hasnt changed.
+new_tupla # But again this is a new object the original one  hasn’t changed.
 
 ```
 
@@ -337,7 +337,7 @@ These operations exists for any sequence!
 weh = ('a','b','c','d','e','f')
 weh[1] # b
 weh[1:3] # b, c
-weh[3] in weh[1:3] # false, position 3 doesnt exsit in that slice of weh
+weh[3] in weh[1:3] # false, position 3 doesn’t exist in that slice of weh
 weh[:3] # a,b,c
 weh[3:] # d,e,f
 weh[0:5:2] # a, c, e steps of 2
@@ -356,7 +356,7 @@ veggies['spinach'] = 3  ## adds in the same list the key value pair
 del veggies['rhubarb'] ## deletes the value in the dictionary
 veggies.update({'lettuce':4}) ## same as above
 
-'spinach' in veggies # true yo search the key
+'spinach' in veggies # true (you search the key)
 3 in veggies # False you only search the key not the value
 veggies['spinach'] # 3 HOWEVER HOWEVER DONT USE THIS IT MIGHT THROW AN ERROR IF THE KEY DOESNT EXIST
 veggies.get('spinach') # use this instead
@@ -383,7 +383,7 @@ set_b = set(['one','four','five'])
 
 set_a & set_b ## 'one' the intersection
 set_a | set_b ## 'five', 'four', 'one', 'three', 'two'  the union
-set_a ^ set_b ## 'five', 'four', 'three', 'two' the symmetric difference aka all that doesnt intersects
+set_a ^ set_b ## 'five', 'four', 'three', 'two' the symmetric difference aka all that doesn’t intersects
 set_a - set_b ## 'five', 'four', 'three', 'two' the asymmetric difference aka everything in a that's not in b
 
 ```
@@ -394,12 +394,12 @@ set_a - set_b ## 'five', 'four', 'three', 'two' the asymmetric difference aka ev
 
 
 ```python
-myfile = open('data.txt', 'w' ) #dont forget that if the file is in another directory put the path!'
-myfile.write("wololo")  ## Opening a file at already exists will erase the original file
+myfile = open('data.txt', 'w' ) #don’t forget that if the file is in another directory put the path!'
+myfile.write("wololo")  ## Opening a file that already exists will erase the original file
 myfile.close()
 ```
 
-#### There are different modes: 'r' reading, 'a' appending, 'r+' rading and writing and 'b' binary mode
+#### There are different modes: 'r' reading, 'a' appending, 'r+' reading and writing and 'b' binary mode
 
 ### A way to use a file in a block is using 'with':
 
@@ -420,7 +420,7 @@ with open('data2.txt') as f:
     print(f.read())
 ```
 
-### How to read line by line without loading everything in to memory:
+### How to read line by line without loading everything into memory:
 
 
 ```python
@@ -438,7 +438,7 @@ The seek command sets the position of the cursor within the file
 inputfile = open('data2.txt','r')
 inputfile.tell() # tells 0
 inputfile.read(4) ## reads 4 chars
-inputfile.tell() # tells 4 now, menaing that if you execute read() youll get all the characters after the first 4.
+inputfile.tell() # tells 4 now, meaning that if you execute read() you’ll get all the characters after the first 4.
 inputfile.seek(0) # returns to position 0 of the file, meaning that you'll read since the beginning
 inputfile.read()  # reads everything, to prove that seek works.
 inputfile.close()
@@ -468,7 +468,7 @@ mystringfile = io.StringIO("MyData") ## this would create the object with data i
 ```python
 def iprintdata(x):
     print(x.read())
-#iprintdata("wololo") ### wont work, its a string.
+#iprintdata("wololo") ### won’t work, it’s a string.
 my_io = io.StringIO('wololo')
 iprintdata(my_io)
 ```
@@ -489,7 +489,7 @@ type(nobody) ## type Person!
 ```python
 class Person(object):
     species = "Homo sapiens"
-    def talk(self): # remmeber to give every method atleast an argument (almost always self). Python Internally translate nobody.talk() into Person.talk(nobody)
+    def talk(self): # remember to give every method at least an argument (almost always self). Python Internally translate nobody.talk() into Person.talk(nobody)
         return "Hello!"
 
 nobody = Person()
@@ -505,8 +505,8 @@ del nobody.name # deleted
 #nobody.name # AttributeError! no longer exists
 ```
 
-### Ofcourse its better if you assign instance specific attributes if you are gonna keep adding them everytime.
-You create this attributesd using the __innit__ function.
+### Of course, it’s better if you assign instance specific attributes if you are gonna keep adding them every time.
+You create these attributes using the __innit__ function.
 
 
 ```python
@@ -553,7 +553,7 @@ print(ashens) ## before it was something like <__main__.Person object at 0x00000
 ashens  ## before it was something like <__main__.Person at 0x1cdd78ede88>
 ```
 
-### Nevertheless, in practice we rarely do this (just because you can, doesnt mean you should). SO isntead the class should be initiated like this:
+### Nevertheless, in practice we rarely do this (just because you can, doesn’t mean you should). SO instead the class should be initiated like this:
 
 
 ```python
@@ -599,7 +599,7 @@ tyler.work()
 ```
 
 ### Creating a python script with a class
-The main thing... get it? IS that because you added the __name .... if you were to run this script in the cli, then it will execute, but if you import it as a module... you will just get the definitions and funcitons... but no execution
+The main thing... get it? IS that because you added the __name .... if you were to run this script in the cli, then it will execute, but if you import it as a module... you will just get the definitions and functions... but no execution
 
 
 ```python
@@ -625,9 +625,9 @@ if __name__ == '__main__':
 ## Namespace:
 Are what store the name of all variables, functions, classes, modules, etc. Kind of like a big dictionary that maps the name to the things named
 
-Global namespace: is accesible from everywhere in the program.
+Global namespace: is accessible from everywhere in the program.
 
-Local Namespace: Is accesible depending on the current scope - whether you are in a function, loop, class, etc. Also each module has its own namespace.
+Local Namespace: Is accessible depending on the current scope - whether you are in a function, loop, class, etc. Also, each module has its own namespace.
 
 
 ```python
@@ -662,7 +662,7 @@ In python you do this with the try and except commands.
 ```python
 def f(x):
     try:
-        print("Im going to convert the input to an integer")
+        print("I’m going to convert the input to an integer")
         print(int(x))
     except ValueError:
         print ("I am afraid i cannot do this john")
@@ -672,7 +672,7 @@ def f(x):
 # If that produces no exceptions, except block is skipped and he program continues.
 # if an exception occurs, the rest of the try block is skipped.
 # If the type of exception is named after the except block, the code after except is executed
-# Else the execution stops and you have an unhandled exception
+# Else the execution stops, and you have an unhandled exception
 ```
 
 ### Example 2:
@@ -682,7 +682,7 @@ def f(x):
 
 def f(x):
     try:
-        print("Im going to convert the input to an integer")
+        print("I’m going to convert the input to an integer")
         print(int(x))
     except (ValueError, TypeError) as  detail:
         print ("handled exception", detail)
@@ -691,8 +691,8 @@ def f(x):
     finally:
         print("this will always run!")
 
-# You can add multiple exceptions in an except command, and using as allow us to capture it into a message.
-# The finally command will ALWAYS be executed, regardless of whether there was an exception or not.... So use this to clean up anything left over from try and except.
+# You can add multiple exceptions in an except command and using as allow us to capture it into a message.
+# The ‘finally’ command will ALWAYS be executed, regardless of whether there was an exception or not.... So, use this to clean up anything left over from try and except.
 # Note that in spite of this, having an auxiliary function to clean might be useful to be executed before running you main() As some errors cannot be caught (your server collapses and shuts down for example)
 ```
 
@@ -709,7 +709,7 @@ raise myOwnError("Wololo!")
 ```
 
 #### Creating your own Iterator (Digression alert):
-(Honestly for 95% of your work you will never see this, but hey its good to know right?)
+(Honestly for 95% of your work you will never see this, but hey it’s good to know right?)
 
 
 ```python
@@ -742,8 +742,8 @@ weh = NonFactorIterable(2, 3, 5, 7, 11, 13, 17)
 [x for x in weh]
 ```
 
-#### Generators: iterators with a much ligther syntax. a very simple one looks like list comprehensiosn but with () instead of [].
-#### More complicated generators are like funcitons except that you use yield instead of return (remember the slight detour i took earlier? Go back and check it :) )
+#### Generators: iterators with a much lighter syntax. a very simple one looks like list comprehensions but with () instead of [].
+#### More complicated generators are like functions except that you use yield instead of return (remember the slight detour i took earlier? Go back and check it :) )
 
 ## String Formatting:
 Some basic examples
@@ -796,11 +796,11 @@ f"{x+y}"
 
 
 Warning, the following topic (as you'll see in the examples) is a bit more obtuse.
-Moroever, Python is not really well optimised to do heavy programming the functional way... so while neat and good to know... you kinda can skip this part.
+Moreover, Python is not really well optimised to do heavy programming the functional way... so while neat and good to know... you kinda can skip this part.
 
 
 ```python
-### This is is functional:
+### This is functional:
 def increment(x):
     return x + 1
 ```
@@ -814,7 +814,7 @@ def increment():
     a += 1
 ```
 
-#### Sligthly more complex example:
+#### Slightly more complex example:
 
 
 ```python
@@ -845,7 +845,7 @@ notFunctionalEx(4)
 
 ### Recursion! How to loop without a loop aka without mutability
 
-Again remember my example? Here you dont change a variable, you are merely calling the same function over and over again with an updated parameter
+Again, remember my example? Here you don’t change a variable; you are merely calling the same function over and over again with an updated parameter
 
 
 ```python
@@ -856,7 +856,7 @@ def functionalEx(n):
         return n + functionalEx(n - 1) # this is called recursion
 ```
 
-The always classic fibonacci number
+The always classic Fibonacci number
 
 
 ```python
@@ -873,11 +873,11 @@ def nthFib(n):
 nthFib(10)
 ```
 
-#### Warning: Wall of text incomming
+#### Warning: Wall of text incoming
 
-Note about recursion: Python is not optimised to be a functional programming language like Scala. For example there is a recursion limit (1000 calls).
+Note about recursion: Python is not optimised to be a functional programming language like Scala. For example, there is a recursion limit (1000 calls).
 
-Remember, there is no universal programming language. if you needed strictly functional pragramming try scala.
+Remember, there is no universal programming language. if you needed strictly functional programming try Scala.
 
 With that said, there is technically a workaround.... which is tail recursion (which in python is not optimized).
 
@@ -903,14 +903,14 @@ def functional_tailEx(n, accum = 0):
 ```
 
 ## Map and Reduce:
-Technically this is still part part functional programming, but this is more applicable for python than recursion and quite frankly is important to know.
+Technically this is still part functional programming, but this is more applicable for python than recursion and quite frankly is important to know.
 
 ### map: is a function that takes 2 arguments: another function and a collection of items. it will:
 1) Run the function on each item of the original collection
 
-2) Return a new colection containing the results (its an iterator so you need to convert it to something else to print it)
+2) Return a new collection containing the results (it’s an iterator so you need to convert it to something else to print it)
 
-3) This leaves the original colection unchanged
+3) This leaves the original collection unchanged
 
 ### Example 1:
 
@@ -929,9 +929,9 @@ print(list(squares)) ## [0, 4, 9, 16]
 ```
 
 ##### What is lambda:
-Lambda allows you to define an anonymous function. Arguments fit between lambda and : so x is an argument. The stuff after the colon gets implicitly returned
+Lambda allows you to define an anonymous function. Arguments fit between lambda and : so, x is an argument. The stuff after the colon gets implicitly returned
 
-I would use lambda functions for map (but ... if its  avery complex function i wouldnt).For very simple cases or when you dont need to reuse the function multiple times. Remember if you dont save the results they are gone forever.
+I would use lambda functions for map (but ... if it’s  a very complex function i wouldn’t).For very simple cases or when you don’t need to reuse the function multiple times. Remember if you don’t save the results they are gone forever.
 
 ### Example 3:
 
@@ -944,7 +944,7 @@ print(list(covernames))
 ```
 
 ### reduce: Follow-on counterpart to map  given a function and a collection of items, it uses the function to combine them into a single value:
-Functions passed tor educe have some restrinctions. It must take 2 arguments, an accumulator a and an update value u. u is like before with map, it will get set to each item in your colection one by one. a is new, it will receive the output from the previous function call, thus combining value from item to item
+Functions passed to reduce have some restrictions. It must take 2 arguments, an accumulator a and an update value u. u is like before with map, it will get set to each item in your collection one by one. a is new, it will receive the output from the previous function call, thus combining value from item to item
 
 
 ```python
@@ -954,15 +954,15 @@ print(sum)
 ```
 
 ## Command line Arguments:
-Everything passed as Arguments to a Python program is available in the intepreter as the list of string in sys.argv
+Everything passed as Arguments to a Python program is available in the interpreter as the list of string in sys.argv
 
 
 ```python
 import sys
 print(sys.argv)
 
-# When running a script, sys.argv[0] is the name of the script (since this is a jupyter notebook, the notebook isnt the python script so dont get confused, rather it is argument 2)
-# in theory you could parse this but youll be limited to simple positional arguments
+# When running a script, sys.argv[0] is the name of the script (since this is a Jupyter notebook, the notebook isn’t the python script so don’t get confused, rather it is argument 2)
+# in theory you could parse this, but you’ll be limited to simple positional arguments
 ```
 
 ### The argparse Module
@@ -1001,7 +1001,7 @@ print(args)
 ```
 
 ### Advanced stuff:
-The add_argument method can configure behavior, such as making the parser attempt to convert arguments to the specified type like int or float or file (so long as its a single string argument)
+The add_argument method can configure behaviour, such as making the parser attempt to convert arguments to the specified type like int or float or file (so long as it’s a single string argument)
 
 
 ```python
@@ -1029,9 +1029,9 @@ parser.parse_args('n1 n2 -m a b c'.split()) # Namespace(m=['a', 'b', 'c'], n=['n
 parser.parse_args('n1 n2 hue -m a b c'.split()) # Namespace(m=['a', 'b', 'c'], n=['n1', 'n2'], o='hue')
 ```
 
-The default keyword can also be used with optional arguments. When an optional arguments is always used as a flag without parameter, it is also possible to use the action='store_const' and const keyword.
+The default keyword can also be used with optional arguments. When an optional argument is always used as a flag without parameter, it is also possible to use the action='store_const' and const keyword.
 
-In this case, when the option is detected, the Namespace is given an appropiately-named sttribute with const as it value. If the option is not present in the parsed args, the attributr is created with the value given in default or None if it isnt set.
+In this case, when the option is detected, the Namespace is given an appropriately named attribute with const as its value. If the option is not present in the parsed args, the attribute is created with the value given in default or None if it isn’t set.
 
 For more info https://docs.python.org/3.7/library/argparse.html
 
@@ -1051,7 +1051,7 @@ parser.parse_args('-cbn'.split()) #Namespace(b=True, c=5, n=7)
 
 ## Logging:
 The easiest way to look Pro... and make your life easier!
-The logging module is included. Lets start by writing messages at different levels.
+The logging module is included. Let’s start by writing messages at different levels.
 
 
 ```python
@@ -1060,7 +1060,7 @@ logging.warning("You have been warned")
 
 logging.critical("ABORT ABORT ABORT")
 
-logging.info('This is some info') ### this one may not appear! By default the root logger is set to only handle messages Warning or higher.
+logging.info('This is some info') ### this one may not appear! By default, the root logger is set to only handle messages Warning or higher.
 
 logging.root.setLevel(logging.INFO)
 logging.root.getEffectiveLevel() == logging.INFO
@@ -1070,11 +1070,11 @@ logging.info('This is some info that should now appear')
 
 As you can see there are several levels, from least to most important: DEBUG, INFO, WARNING, ERROR, CRITICAL
 
-The level of the root logger can be configured at module level, but MUST be done before any messages are sent.
+The level of the root logger can be configured at module level but MUST be done before any messages are sent.
 
 Otherwise the level must be set directly on the logger.
 
-##### Try this in a New Session (it wont work if you already displayed messages)
+##### Try this in a New Session (it won’t work if you already displayed messages)
 
 
 ```python
@@ -1089,14 +1089,14 @@ logging.root.getEffectiveLevel() == logging.INFO
 
 From all this, a strategy emerges around using logging to improve your debugging:
 
-1) Instead of print staments, add calls to logging.debug to your code.
+1) Instead of print statements, add calls to logging.debug to your code.
 
 2) At the top of your script, use logging.basicConfig(level=logging.DEBUG) for development: switch to INFO or WARNING for production.
 
 3) Optionally make a command line option for your script that enables debugging output(eg my_script.py --verbose)
 
 
-#### Note there is much much more stuff you could do, like using multiple loggers at the same time, each handing its own formatting and levels. Again this is just the tip.
+#### Note there is much much more stuff you could do, like using multiple loggers at the same time, each handing its own formatting and levels. Again, this is just the tip.
 
 ## System interaction
 os module: allows you to interact with your operating system.
@@ -1124,7 +1124,7 @@ os.mkdir('new_dir')
 os.rename('file.txt', 'newdir\\file.txt')
 ```
 
-The os.path submodule provides addtional functionality for your path needs.
+The os.path submodule provides additional functionality for your path needs.
 
 
 ```python
@@ -1136,7 +1136,7 @@ os.path.exists(sample_path)
 ```
 
 ### shutil Module:
-living on top of the os module it makes high elvel operations on files and collections of files easier
+living on top of the os module it makes high level operations on files and collections of files easier
 
 
 ```python
@@ -1155,7 +1155,7 @@ shutil.move(source,dest) # works with directories
 ## RESTful API
 How to interact with the outside world, via HTTPS using APIs
 
-For this part of this tutorial, we will be using the requests module. It might already come installed (Atleast in Anaconda it does )
+For this part of this tutorial, we will be using the requests module. It might already come installed (At least in Anaconda it does )
 
 Otherwise in your terminal you type:
 
@@ -1165,13 +1165,13 @@ REST is simply a convention for structing a web API.
 
 This means an API that you interact with over HTTP/HTTPS, making requests to specific URLs to obtain information from the destination... or even add information to said destination.
 
-#### These are the kind of requets you can do via HTTPS:
+#### These are the kind of request you can do via HTTPS:
     - GET: retrieve information (like search results). This is the most common type of request. The info you get depends on what the API can share.
     - POST: adds new data to the server.
     - PUT: changes existing information. For example, it would be possible to change the value of an existing item.
     - DELETE: deletes existing information,
 
-The information you will request to get/put will usually come in the JSON format (or whatever is your favourite semi-structured and the API supports). That being said, your reponse could simply be a blob of text. Here is an example:
+The information you will request to get/put will usually come in the JSON format (or whatever is your favourite semi-structured and the API supports). That being said, your response could simply be a blob of text. Here is an example:
 
 {
     "id": "your_item",
@@ -1194,13 +1194,13 @@ request_1.status_code ### to see how this ended a 2xx code usually means success
 if request_1.status_code != 200:
     raise ApiError('GET ended in {}'.format(resp.status_code))
 #print(request_1.content) ## You will get a very chunky blob of text!
-request_1.headers.get('content-type') # As you can see here its no json
+request_1.headers.get('content-type') # As you can see here it’s no json
 
-#Now lets try getting the info from a site whose API will return a JSON
+#Now let’s try getting the info from a site whose API will return a JSON
 
 request_2 = requests.get('https://httpbin.org/get')
 request_2.status_code
-request_2.headers.get('content-type') # Now its a Json
+request_2.headers.get('content-type') # Now it’s a Json
 print(request_2.text)
 
 ```
@@ -1257,4 +1257,4 @@ print(request_3.text) ### look inside the "form" label
 
 
 #### FINAL NOTE:
-If you need to interact with your OS like executing a command ... That is beyond the scope of this guide... Congratulations, that means you are advanced enough to learn about subprocess (and if its too complex for your needs... you might try os.system... but better learn the big bad thing)
+If you need to interact with your OS like executing a command ... That is beyond the scope of this guide... Congratulations, that means you are advanced enough to learn about subprocess (and if it’s too complex for your needs... you might try os.system... but better learn the big bad thing)
