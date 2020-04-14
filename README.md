@@ -3,7 +3,7 @@
 Adapted from the NSA Guide to Python Programming. Seriously if you want something more comprehensive, and you like reading courses, check it out at:
 https://archive.org/details/comp3321/page/n89/mode/2up/search/device
 
-### By: Bruno M. Cervantes Quino
+### Adapted by: Bruno M. Cervantes Quino
 
 ### V1.0
 
