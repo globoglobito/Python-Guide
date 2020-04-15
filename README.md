@@ -5,7 +5,7 @@ https://archive.org/details/comp3321/page/n89/mode/2up/search/device
 
 ### Adapted by: Bruno M. Cervantes Quino
 
-### V1.0
+### V1.01
 
 ### Installing Python (and Jupyter notebooks) via Anaconda.
 
