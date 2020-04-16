@@ -1,4 +1,4 @@
-# A Small simple guide to learn Python:
+# A small simple guide to learn Python:
 
 Adapted from the NSA Guide to Python Programming. Seriously if you want something more comprehensive, and you like reading courses, check it out at:
 https://archive.org/details/comp3321/page/n89/mode/2up/search/device
