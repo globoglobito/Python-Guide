@@ -3,11 +3,11 @@
 Adapted from the NSA Guide to Python Programming. Seriously if you want something more comprehensive, and you like reading courses, check it out at:
 https://archive.org/details/comp3321/page/n89/mode/2up/search/device
 
-This began as an intertal task, designed to teach new hires about Python. Eventually we thought, what the hell this might help others as well.
+This began as an internal task, designed to teach new hires about Python. Eventually we thought, what the hell this might help others as well.
 
 ### Adapted by: Bruno M. Cervantes Quino
 
-### V1.01
+### V1.02
 
 ### Installing Python (and Jupyter notebooks) via Anaconda.
 
